@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header class="header">
+        <img class="header_img" src="./assets/logo.png" alt="logo_rick_and_morty">
+        <nav class="header_container">
+            <ul class="header_container_menu">
+                <li class="header_container_menu--list"><a class="header_container_menu_item"  href="">Home</a></li>
+                <li class="header_container_menu--list"><a class="header_container_menu_item"  href="">Characters</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main_container">
+            <div class="main_article">
+                <h2 class="main_subtitle">JavaScript Asynchronism</h2>
+                <article class="main_text"> On this site you can find information about your favorite scientist and his unfortunate grandson. In addition to other characters that appear in the series, as well as information about them. The purpose of this project was to practice what was learned about asynchronism in JavaScript. For this I made use of an asynchronous function to make requests to the API, the same that you can visit in: Rick and Morty's API.</article>
+            </div>
+            <img class="main_img" src="./assets/img.png" alt="rich_and_morty">
+            <div class="main_container_browser">
+                <input class="browser_input" type="text" placeholder="Name character...">
+                <button class="browser_button" type="button" onclick="search()"><img class="browser_button--img" src="./assets/icon-búsqueda.png" alt="buscar"></button>
+            </div>
+        </div>
+        <div class="container_card"></div>
+    </main>
+    <footer class="footer_container">
+        <a class="footer_item" href="/">Terms and condition</a>
+        <a class="footer_item" href="/">Policies and privacy</a>
+        <a class="footer_item" href="/">Contact us</a>
+    </footer>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
