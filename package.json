@@ -1,0 +1,20 @@
+{
+  "name": "rickpage",
+  "version": "1.0.0",
+  "description": "pagina de rick y morty curso de Asincronismo de platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skraitt/rickPage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skraitt/rickPage/issues"
+  },
+  "homepage": "https://github.com/Skraitt/rickPage#readme"
+}
