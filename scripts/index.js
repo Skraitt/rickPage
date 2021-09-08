@@ -2,11 +2,6 @@ const API = 'https://rickandmortyapi.com/api/character/';
 const API2 = `https://rickandmortyapi.com/api/character/?name=`;
 
 
-async function getCharacters() {
-    const response = await fetch(API);
-    const data = await response.json();
-    return data;
-}
 
 function searchURL (name) {
     return API2.replace("=", `=${name}`);
@@ -19,12 +14,7 @@ async function getSearch(name) {
     return data.results[0];
 }
 
-function getPhoto(data) {
-    return data.image;
-}
-
 function renderCharacter(data) {
-    const photoURL = getPhoto(data);
     const containerCard = document.getElementsByClassName('container_card');
     containerCard.innerHTML = ``;
     const card = document.createElement("div");
@@ -70,3 +60,6 @@ async function search () {
     const data = await getSearch(name[0].value);
     renderCharacter(data);
 }
+
+
+

@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: "Fira Sans", sans-serif;
+  color: white;
 }
 
 .header {
@@ -57,109 +58,83 @@ body {
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: -webkit-gradient(linear, left top, left bottom, from(#018D9F), to(#5EBD53));
   background: linear-gradient(#018D9F, #5EBD53);
+  padding-top: 30px;
 }
 
-.main_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main_img {
-  width: 300px;
-  height: 400px;
-}
-
-.main_article {
-  padding: 100px 200px;
-  width: 500px;
-  color: white;
-  line-height: 30px;
-}
-
-.main_subtitle {
-  font-weight: bold;
+.main-title {
+  margin: 0px;
   text-align: center;
-  color: #5EBD53;
 }
 
-.text-important {
-  text-decoration: none;
-  color: magenta;
+#main-refresh {
+  margin: 40px 40px;
+  height: 50px;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(225, 255, 255, 0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  cursor: pointer;
   font-weight: bold;
-  font-size: 18px;
 }
 
-.main_container_browser {
-  width: 100%;
-  padding-bottom: 30px;
+.panel {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 20% 20% 20% 20% 20%;
+      grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.panel_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.browser_input {
-  background-color: rgba(225, 255, 255, 0.1);
-  height: 45px;
-  width: 60%;
-  padding: 0px 20px;
-  border: 2px solid white;
-  outline: none;
-  color: white;
-  border-radius: 50px;
-}
-
-.browser_input::-webkit-input-placeholder {
-  color: white;
-}
-
-.browser_input:-ms-input-placeholder {
-  color: white;
-}
-
-.browser_input::-ms-input-placeholder {
-  color: white;
-}
-
-.browser_input::placeholder {
-  color: white;
-}
-
-.browser_button {
-  height: 50px;
-  color: #018D9F;
-  background-color: rgba(225, 255, 255, 0);
-  border: 0px;
-}
-
-.browser_button:hover {
+  margin-left: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  border: white 2px solid;
+  margin-bottom: 20px;
+  border-radius: 25px;
   cursor: pointer;
 }
 
+.panel_item-img {
+  height: 200px;
+  width: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 25px;
+}
+
+.panel_item-name {
+  text-align: center;
+  margin: 10px;
+}
+
 .container_card {
-  margin: 10% 40%;
-  padding: 10px 10px;
-  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 20px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: rgba(225, 255, 255, 0.3);
   visibility: hidden;
   border: 2px solid white;
@@ -236,14 +211,36 @@ body {
   .header_container_menu_item {
     font-size: 15px;
   }
-  .main_article {
-    padding: 10px 50px;
-  }
   .main_img {
     width: 200px;
     height: 300px;
     margin-left: 20%;
     margin-bottom: 20px;
+  }
+  .panel {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    -ms-flex-line-pack: stretch;
+        align-content: stretch;
+  }
+  .panel_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 230px;
+    margin: 10px 10px;
+  }
+  .panel_item-img {
+    height: 150px;
+    width: 150px;
+  }
+  .container_card {
+    left: 30%;
+    top: 20%;
   }
   .footer_container {
     height: 80px;
@@ -258,4 +255,4 @@ body {
     margin: 55% 20%;
   }
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=characters.css.map */

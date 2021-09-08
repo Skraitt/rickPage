@@ -1,0 +1,296 @@
+body {
+  margin: 0px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.header {
+  background-color: #018D9F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.header_img {
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header_container {
+  width: 350px;
+}
+
+.header_container_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  margin: 25px;
+  letter-spacing: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_container_menu-list {
+  list-style: none;
+}
+
+.header_container_menu_item {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: "Fira Sans", sans-serif;
+  letter-spacing: 2px;
+}
+
+.header_container_menu_item:hover {
+  -webkit-text-decoration: underlines;
+          text-decoration: underlines;
+}
+
+.main {
+  background: -webkit-gradient(linear, left top, left bottom, from(#018D9F), to(#5EBD53));
+  background: linear-gradient(#018D9F, #5EBD53);
+  margin: 0px;
+  min-height: calc(100vh - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bug-title {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.bug-text {
+  font-size: 20px;
+}
+
+.bug-home {
+  background-color: rgba(225, 225, 225, 0.1);
+  color: white;
+  height: 50px;
+  border-radius: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  margin: 10px 0px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.bug_animation {
+  -webkit-animation-name: jump;
+          animation-name: jump;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.animation-404 {
+  font-size: 150px;
+  font-weight: bold;
+  text-shadow: 10px 10px 5px #018D9F;
+  -webkit-animation-name: jumpShadow;
+          animation-name: jumpShadow;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+@-webkit-keyframes jumpShadow {
+  0% {
+    text-shadow: 5px 5px 5px #018D9F;
+  }
+  50% {
+    text-shadow: 20px 20px 20px #5EBD53;
+  }
+  100% {
+    text-shadow: 5px 5px 5px #018D9F;
+  }
+}
+
+@keyframes jumpShadow {
+  0% {
+    text-shadow: 5px 5px 5px #018D9F;
+  }
+  50% {
+    text-shadow: 20px 20px 20px #5EBD53;
+  }
+  100% {
+    text-shadow: 5px 5px 5px #018D9F;
+  }
+}
+
+.footer_container {
+  background-color: #5EBD53;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer_item {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.footer_item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .header_img {
+    width: 200px;
+    height: 80px;
+  }
+  .header_container_menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 15px 20px;
+    margin: 10px;
+  }
+  .header_container_menu_item {
+    font-size: 15px;
+  }
+  .main_img {
+    width: 200px;
+    height: 300px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+  }
+  .main {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .animation-404 {
+    margin: 0px 50px;
+  }
+  @-webkit-keyframes jump {
+    0% {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+    }
+    50% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+    }
+  }
+  @keyframes jump {
+    0% {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+    }
+    50% {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2);
+    }
+    100% {
+      -webkit-transform: scale(0.8);
+              transform: scale(0.8);
+    }
+  }
+  @-webkit-keyframes jumpShadow {
+    0% {
+      text-shadow: 5px 5px 5px #018D9F;
+    }
+    50% {
+      text-shadow: 15px 15px 15px #5EBD53;
+    }
+    100% {
+      text-shadow: 5px 5px 5px #018D9F;
+    }
+  }
+  @keyframes jumpShadow {
+    0% {
+      text-shadow: 5px 5px 5px #018D9F;
+    }
+    50% {
+      text-shadow: 15px 15px 15px #5EBD53;
+    }
+    100% {
+      text-shadow: 5px 5px 5px #018D9F;
+    }
+  }
+  .footer_container {
+    height: 100px;
+  }
+  .footer_item {
+    text-align: center;
+    width: 33%;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+/*# sourceMappingURL=bug.css.map */
