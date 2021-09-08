@@ -73,7 +73,7 @@ function renderCharacter(data) {
         }
     </style>
     <header class="card_header">
-        <button class="car_button_close"><img class="icon_close" onclick="closeSearch()" src= "../assets/close-icon.png" alt="close"></button>
+        <button class="car_button_close"><img class="icon_close" onclick="closeSearch()" src="https://img.icons8.com/ios-glyphs/30/ffffff/macos-close.png" alt="close"></button>
     </header>
     <img class="card_img" src="${data.image}" alt="Character">
     <div class="card_info">
