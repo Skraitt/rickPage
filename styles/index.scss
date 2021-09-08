@@ -120,10 +120,11 @@ body {
 }
 
 .container_card {
-    margin: 10% 40%;
-    padding: 10px 10px;
-    position: absolute;
+    position: fixed;
     display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 30%);
     justify-content: center;
     align-items: center;
     top: 20px;
@@ -218,10 +219,6 @@ body {
         width: 33%;
         padding: 0px;
         margin: 0px;
-    }
-    
-    .container_card{
-        margin: 55% 20%;
     }
 
 }

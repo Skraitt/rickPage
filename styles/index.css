@@ -147,12 +147,14 @@ body {
 }
 
 .container_card {
-  margin: 10% 40%;
-  padding: 10px 10px;
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, 30%);
+          transform: translate(-50%, 30%);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -253,9 +255,6 @@ body {
     width: 33%;
     padding: 0px;
     margin: 0px;
-  }
-  .container_card {
-    margin: 55% 20%;
   }
 }
 /*# sourceMappingURL=index.css.map */
