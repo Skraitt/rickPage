@@ -1,6 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&display-swap);
 body {
   margin: 0px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Muli", sans-serif;
 }
 
 .header {
@@ -46,14 +47,14 @@ body {
 .header_container_menu_item {
   text-decoration: none;
   color: white;
-  font-weight: bold;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Muli", sans-serif;
   letter-spacing: 2px;
 }
 
 .header_container_menu_item:hover {
   -webkit-text-decoration: underlines;
           text-decoration: underlines;
+  font-weight: bold;
 }
 
 .main {
@@ -95,6 +96,10 @@ body {
   color: magenta;
   font-weight: bold;
   font-size: 18px;
+}
+
+.text-important:hover {
+  text-decoration: underline;
 }
 
 .main_container_browser {
@@ -214,15 +219,15 @@ body {
 .footer_item {
   text-decoration: none;
   color: white;
-  font-weight: bold;
 }
 
 .footer_item:hover {
   text-decoration: underline;
   cursor: pointer;
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .header_img {
     width: 200px;
     height: 80px;
@@ -237,6 +242,12 @@ body {
   }
   .header_container_menu_item {
     font-size: 15px;
+  }
+  .main {
+    min-height: calc(100vh - 180px);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .main_article {
     padding: 10px 50px;

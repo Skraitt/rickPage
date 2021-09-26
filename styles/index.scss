@@ -1,6 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&display-swap);
+$font: 'Muli', sans-serif;
 $greenTone: #5EBD53;
 $blueTone: #018D9F;
-$font: "Fira Sans", sans-serif;
 
 body {
     margin: 0px;
@@ -42,13 +43,13 @@ body {
 .header_container_menu_item{
     text-decoration: none;
     color: white;
-    font-weight: bold;
     font-family: $font;
     letter-spacing: 2px;
 }
 
 .header_container_menu_item:hover {
     text-decoration: underlines;
+    font-weight: bold;
 }
 
 .main {
@@ -84,6 +85,10 @@ body {
     color: magenta;
     font-weight: bold;
     font-size: 18px;
+}
+
+.text-important:hover{
+    text-decoration: underline;
 }
 
 .main_container_browser {
@@ -174,15 +179,15 @@ body {
 .footer_item {
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
 .footer_item:hover {
     text-decoration: underline;
     cursor: pointer;
+    font-weight: bold;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:1200px){
     
     .header_img {
         width: 200px;
@@ -197,6 +202,11 @@ body {
 
     .header_container_menu_item{
         font-size: 15px;
+    }
+
+    .main {
+        min-height: calc(100vh - 180px);
+        align-items: center;
     }
 
     .main_article{

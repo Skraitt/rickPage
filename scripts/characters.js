@@ -71,6 +71,9 @@ function renderCharacter(data) {
         .panel {
             filter: blur(4px);
         }
+        .panel_item:hover{
+            cursor: default;
+        }
     </style>
     <header class="card_header">
         <button class="car_button_close"><img class="icon_close" onclick="closeSearch()" src="https://img.icons8.com/ios-glyphs/30/ffffff/macos-close.png" alt="close"></button>
@@ -94,7 +97,8 @@ function closeSearch(){
             visibility: hidden;
         }
     </style>`;
-
+    const bottoms = document.getElementsByClassName('panel_item');
+    bottoms.disabled = false;
 }
 
 
